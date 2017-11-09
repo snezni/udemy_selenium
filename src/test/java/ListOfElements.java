@@ -32,10 +32,10 @@ public class ListOfElements {
         int radioButtonsSize = radioButtons.size();
         System.out.println("Size of the list is: " + radioButtonsSize);
         boolean isChecked = false;
-        for (int i =0; i < radioButtonsSize; i++){
-            isChecked = radioButtons.get(i).isSelected();
-            if(!isChecked){
-                radioButtons.get(i).click();
+        for (WebElement radioButton : radioButtons) {
+            isChecked = radioButton.isSelected();
+            if (!isChecked) {
+                radioButton.click();
                 Thread.sleep(2000);
             }
 

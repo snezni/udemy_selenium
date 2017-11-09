@@ -47,10 +47,10 @@ public class WorkingWithSelectClass {
         Thread.sleep(2000);
         System.out.println("Print a list of all options");
         List<WebElement>options = select.getOptions();
-        for (int i = 0; i<options.size();i++) {
-            String optionName = options.get(i).getText();
+        for (WebElement option : options) {
+            String optionName = option.getText();
             System.out.println(optionName);
-            
+
         }
 
 

@@ -32,10 +32,10 @@ public class ListOfElements2 {
        boolean isSelected = false;
        int rbCarsSize = rbCars.size();
         System.out.println("Number of size elements are: " + rbCarsSize);
-        for(int i =0;i < rbCarsSize; i++){
-            isSelected = rbCars.get(i).isSelected();
-            if(!isSelected){
-                rbCars.get(i).click();
+        for (WebElement rbCar : rbCars) {
+            isSelected = rbCar.isSelected();
+            if (!isSelected) {
+                rbCar.click();
                 Thread.sleep(2000);
             }
         }
@@ -47,11 +47,11 @@ public class ListOfElements2 {
     public void test2() throws InterruptedException {
         driver.get(practisePage);
         List<WebElement>rbCars = driver.findElements(By.xpath("//input[@type = 'radio' and (@name = 'cars')]"));
-        for(int i =0; i< rbCars.size();i++){
+        for (WebElement rbCar : rbCars) {
             boolean checked = false;
-            checked = rbCars.get(i).isSelected();
-            if(!checked){
-                rbCars.get(i).click();
+            checked = rbCar.isSelected();
+            if (!checked) {
+                rbCar.click();
                 Thread.sleep(2000);
             }
         }
