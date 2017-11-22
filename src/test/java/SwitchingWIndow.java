@@ -47,6 +47,7 @@ public class SwitchingWIndow {
                 Thread.sleep(2000);
                 driver.close();
             }
+
         }
 
         // Switch back to the parent window
