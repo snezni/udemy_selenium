@@ -6,16 +6,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.*;
-
-public class BasicActionsTest {
+public class BasicActionsSlider {
 
     String basicUrl = "https://letskodeit.teachable.com/p/practice";
+    String jqueryPage = "https://jqueryui.com/slider/";
     WebDriver driver;
     JavascriptExecutor javaScript;
 
@@ -32,16 +30,19 @@ public class BasicActionsTest {
 
     @Test
     public void test() throws InterruptedException {
-        driver.get(basicUrl);
+        driver.get(jqueryPage);
         //javaScript.executeScript("window.scrollBy(0,700)");
-        WebElement mainElement = driver.findElement(By.id("mousehover"));
-
-        Actions actions = new Actions(driver);
-        actions.moveToElement(mainElement).perform();
         Thread.sleep(3000);
-        WebElement subElement = driver.findElement(By.xpath("//div[@class='mouse-hover-content']/a[text()='Top']"));
+        driver.switchTo().frame(0);
+        WebElement slider = driver.findElement(By.xpath("//div[@id='slider']/span"));
+        Actions actions = new Actions(driver);
 
-        subElement.click();
+
+
+        Thread.sleep(3000);
+
+
+
     }
 
     @After
