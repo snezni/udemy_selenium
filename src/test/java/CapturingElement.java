@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -50,6 +49,8 @@ public class CapturingElement {
        File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
        FileUtils.copyFile(sourceFile, new File(directory + fileName));
         driver.quit();
+        WebElement element = driver.findElement(By.id("test"));
+        element.sendKeys(Keys.ENTER);
 
 
     }
