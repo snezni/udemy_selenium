@@ -1,0 +1,38 @@
+08:55:38.238 ERROR LoggingFile -Error Message Logged
+08:55:38.241 FATAL LoggingFile -Fatal Message Logged
+08:55:38.241 INFO  LoggingFile -Info Message Logged
+09:00:37.226 ERROR LoggingFile -Error Message Logged
+09:00:37.230 FATAL LoggingFile -Fatal Message Logged
+09:00:37.230 INFO  LoggingFile -Info Message Logged
+09:00:45.422 DEBUG LoggingDemo -Debug Message Logged
+09:00:45.425 ERROR LoggingDemo -Error Message Logged
+09:00:45.425 FATAL LoggingDemo -Fatal Message Logged
+09:00:45.425 INFO  LoggingDemo -Info Message Logged
+
+
+09:01:08.000 DEBUG LoggingDemo -Debug Message Logged
+09:01:08.003 ERROR LoggingDemo -Error Message Logged
+09:01:08.003 FATAL LoggingDemo -Fatal Message Logged
+09:01:08.003 INFO  LoggingDemo -Info Message Logged
+09:01:44.958 DEBUG demo.LoggingDemo -Debug Message Logged
+09:01:44.961 ERROR demo.LoggingDemo -Error Message Logged
+09:01:44.961 FATAL demo.LoggingDemo -Fatal Message Logged
+09:01:44.961 INFO  demo.LoggingDemo -Info Message Logged
+
+
+09:02:20.331 DEBUG demo.LoggingDemo -Debug Message Logged
+09:02:20.335 ERROR demo.LoggingDemo -Error Message Logged
+09:02:20.335 FATAL demo.LoggingDemo -Fatal Message Logged
+09:02:20.335 INFO  demo.LoggingDemo -Info Message Logged
+09:02:39.197 DEBUG demo.LoggingDemo -Debug Message Logged
+09:02:39.200 ERROR demo.LoggingDemo -Error Message Logged
+09:02:39.200 FATAL demo.LoggingDemo -Fatal Message Logged
+09:02:39.201 INFO  demo.LoggingDemo -Info Message Logged
+
+
+
+
+
+09:03:36.074 ERROR log4j.LoggingFile -Error Message Logged
+09:03:36.077 FATAL log4j.LoggingFile -Fatal Message Logged
+09:03:36.077 INFO  log4j.LoggingFile -Info Message Logged
